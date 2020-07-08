@@ -1,0 +1,116 @@
+.menuPanel {
+  width: 100%;
+  height: 54px;
+  font-family: 'Play', sans-serif, Helvetica, Arial;
+  color: white;
+  font-size: 28px;
+  background: rgb(24, 24, 24);
+  border-bottom: 2px solid white;
+}
+
+.menuHyperlink {
+  padding: 9px 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.menuHyperlink:visited,
+.menuHyperlink:focus,
+.menuHyperlink:active {
+  outline: 0;
+  outline-style: none;
+  border: none;
+  -moz-outline-style: none;
+  text-decoration: none;
+  color: white;
+  text-decoration: none;
+}
+
+.pCAvatar {
+  width: 40px;
+  height: 100%;
+  display: inline-block;
+}
+
+.pCText {
+  height: 54px;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.PCProfileLink {
+  font-size: 22px;
+  color: aqua;
+  display: block;
+}
+
+.PCLogoutLink {
+  font-size: 19px;
+  color: red;
+}
+
+.menuRedirects {
+  width: calc(100% - 184px);
+  height: 100%;
+}
+
+.profileContainer {
+  height: 100%;
+  width: 54px;
+  min-width: 54px;
+  background: rgb(29, 29, 29);
+  text-align: center;
+  cursor: pointer;
+  padding: 0;
+  border: 0;
+}
+
+.avatarImage {
+  border-radius: 50%;
+  font-size: 11px;
+}
+
+.pointsCount {
+  height: 100%;
+  width: 130px;
+  min-width: 130px;
+  background: rgb(26, 26, 26);
+}
+
+.pointsCount > p {
+  font-size: 19px;
+  margin: 0;
+}
+
+.profileMenu {
+  width: 160px;
+  height: 150px;
+  position: absolute;
+  top: 60px;
+  right: 4px;
+  background: rgb(240, 240, 240);
+  border-radius: 10px;
+  border: 0;
+  padding: 10px 0;
+  z-index: 9999;
+}
+
+.profileMenuLink {
+  font-size: 20px;
+  color: rgb(34, 34, 34) !important;
+  width: 100%;
+  text-align: center;
+  padding: 6px 0;
+  cursor: pointer;
+}
+
+.profileMenuLink:hover {
+  background: rgb(160, 160, 160);
+}
+
+.dontHide {
+  justify-self: center;
+}
+
+@media (min-width: 850px) {
+}

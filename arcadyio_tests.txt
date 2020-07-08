@@ -1,0 +1,20 @@
+1. Rejestracja z istniejacym zweryfikowanym mailem
+2. Rejestracja na istniejace, ale zweryfikowane konto
+3. Rejestracja bedac zalogowanym (verified in cookies)
+4. Rejestracja bedac zalogowanym 2 (unverified in cookies)
+
+5. Wejscie na /code/verify bedac zweryfikowanym
+6. Wejscie na /code/verify nie bedac ani zweryfikowanym, ani niezweryfikowanym
+
+7. Wyslanie POST requestu /code/regen/ bedac albo zweryfikowanym
+8. Wyslanie POST requestu /code/regen/ nie bedac ani zweryfikowanym, ani niezweryfikowanym
+
+9. Wyslanie POST requestu /code/verify/ bedac albo zweryfikowanym
+10. Wyslanie POST requestu /code/verify/ nie bedac ani zweryfikowanym, ani niezweryfikowanym
+
+11. Logowanie będąc zalogowanym
+12. Logowanie będąc niezweryfikowanym
+
+13. /logout Request bedac niezalogowanym
+
+Poprawić codeGenerator

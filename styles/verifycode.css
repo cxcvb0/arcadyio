@@ -1,0 +1,51 @@
+#verifyCodeContainer {
+  width: 340px;
+  height: 235px;
+  background: rgb(29, 29, 29);
+}
+
+#codeInput {
+  font-size: 46px;
+  width: 320px;
+  height: 65px;
+  text-align: center;
+  margin: 0 auto;
+  border: 0 solid;
+}
+
+.verifyButton {
+  background: rgb(92, 255, 128);
+}
+
+.verifyButton:hover {
+  background: rgb(0, 255, 55);
+}
+
+.resendButton {
+  background: rgb(165, 87, 87);
+}
+
+.resendButton:hover {
+  background: rgb(218, 73, 73);
+}
+
+.codeButton {
+  font-size: 44px;
+  width: 320px;
+  height: 65px;
+  text-align: center;
+}
+
+#verifyForm {
+  height: 160px;
+}
+
+#resendForm {
+  height: 65px;
+  width: 100%;
+}
+
+#fillerContainer {
+  width: 322px;
+  height: 100%;
+}

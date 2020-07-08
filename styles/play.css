@@ -1,0 +1,297 @@
+* {
+  box-sizing: content-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#defaultGamemodes {
+  width: 100%;
+  height: 48%;
+}
+
+#gamemodesSeparation {
+  width: 100%;
+  height: 4%;
+}
+
+#gamemodesSeparation > span {
+  font-size: 22px;
+  color: white;
+  font-family: 'Play', sans-serif, Helvetica, Arial;
+}
+
+#allpageLongBar {
+  display: none;
+  width: 92%;
+  height: 0;
+  border: 5px solid white;
+  border-radius: 20px;
+}
+
+#allpageLongBar1 {
+  width: 46%;
+  height: 0;
+  border: 5px solid white;
+  border-radius: 20px;
+}
+
+#allpageLongBar2 {
+  width: 46%;
+  height: 0;
+  border: 5px solid white;
+  border-radius: 20px;
+}
+
+#eventsGamemodes {
+  width: 100%;
+  height: 48%;
+}
+
+#defaultGMTop {
+  width: 100%;
+  height: 16%;
+}
+
+#defaultGMBot {
+  width: 100%;
+  height: 84%;
+}
+
+#eventGMTop {
+  width: 100%;
+  height: 16%;
+}
+
+#eventGMBot {
+  width: 100%;
+  height: 84%;
+}
+
+.gamemodeTypeText {
+  letter-spacing: 2px;
+  font-size: 32px;
+  font-family: 'Lekton', sans-serif;
+  color: white;
+}
+
+.jamnikDiv {
+  width: 100%;
+  min-height: 250px;
+}
+
+.actualGamemode {
+  min-width: 200px;
+  width: 200px;
+  height: 250px;
+}
+
+.actualGamemode > button:hover {
+  transform: scale(1.1);
+}
+
+.actualGamemode > button {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-radius: 50%;
+  transition: all 0.07s ease-in-out;
+}
+
+.actualGamemode > button > span {
+  font-size: 32px;
+  text-align: center;
+}
+
+.gamemodeImage {
+  border-radius: 50%;
+}
+
+.noEventsAvailable {
+  font-size: 40px;
+  color: white;
+}
+
+@media (max-width: 765px) {
+  #allpageLongBar {
+    display: block;
+  }
+
+  #gamemodesSeparation > span {
+    display: none;
+  }
+
+  #allpageLongBar1 {
+    display: none;
+  }
+
+  #allpageLongBar2 {
+    display: none;
+  }
+}
+
+/*
+.gmMenuShown {
+  min-width: 500px;
+  width: 500px;
+}
+
+.gmMenuHidden {
+  min-width: 100px;
+  width: 100px;
+}
+
+
+#leftSideContainer {
+  height: 100%;
+  border-right: 3px solid white;
+  transition: all 0.275s ease-in-out;
+}
+
+#playBox {
+  height: 100px;
+  width: 100%;
+}
+
+.playBoxes {
+  height: 100px;
+  width: 100%;
+  position: relative;
+}
+
+.playButton {
+  width: 100%;
+  height: 100%;
+  font-family: 'Play', sans-serif, Helvetica, Arial;
+  font-size: 55px;
+  border-radius: 4px;
+}
+
+#gameModesSelection {
+  width: calc(100% - 12px);
+  height: 430px;
+}
+
+.playButtonImage {
+  transition: all 0.2s ease-in-out;
+}
+.playButtonImage:hover {
+  transform: scale(1.1);
+}
+
+.playPlayButton {
+  background: rgb(231, 65, 65);
+}
+
+.lobbiesPlayButton {
+  background: rgb(42, 106, 224);
+}
+
+.tournamentPlayButton {
+  background: rgb(151, 255, 103);
+}
+
+.playgroundPlayButton {
+  background: rgb(255, 157, 0);
+}
+
+.playgroundPlayButton:hover {
+  background: rgb(228, 141, 1);
+}
+
+.playButtonImgBox {
+  width: 100px;
+  height: 100%;
+}
+
+.playButtonTxtBox {
+  width: 520px;
+  height: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: clip;
+}
+
+.newLabel {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: red;
+  padding: 3px;
+  border-radius: 4px;
+}
+
+.newLabel > span {
+  font-size: 28px;
+  font-family: 'Play', sans-serif, Helvetica, Arial;
+  color: white;
+}
+
+.playHover {
+  background: linear-gradient(
+    45deg,
+    rgb(231, 65, 65),
+    #a8473e,
+    #e8671d,
+    #e2ac17,
+    #1de840,
+    #1de86b,
+    #1dcae8,
+    #1589e7,
+    rgb(42, 106, 224)
+  );
+}
+
+.lobbiesHover {
+  background: linear-gradient(
+    45deg,
+    rgb(42, 106, 224),
+    #2946a5,
+    #5a1de8,
+    #e2178d,
+    #e81d3f,
+    #e8781d,
+    #e7c115,
+    rgb(151, 255, 103)
+  );
+}
+
+.tournamentHover {
+  background: linear-gradient(
+    45deg,
+    rgb(151, 255, 103),
+    #1de86b,
+    #1de8cd,
+    #1735e2,
+    #1de840,
+    #7c1de8,
+    #861de8,
+    rgb(231, 65, 65)
+  );
+}
+
+.rainbowGradient {
+  background-size: 1800% 1800%;
+
+  -webkit-animation: rainbow 20s ease-in-out infinite;
+  -z-animation: rainbow 20s ease-in-out infinite;
+  -o-animation: rainbow 20s ease-in-out infinite;
+  animation: rainbow 20s ease-in-out infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+*/

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
+
+      h1 {
+        font-size: 26px;
+        font-family: 'Sen', Helvetica, sans-serif;
+        color: darksalmon;
+      }
+
+      .messageSpan {
+        font-family: 'Sen', Helvetica, sans-serif;
+        color: black;
+        font-size: 18px;
+        display: block;
+      }
+
+      #verifyButton {
+        margin-top: 20px;
+        background: rgb(150, 223, 150);
+        color: white;
+        font-size: 22px;
+        border: none;
+        border-radius: 8px;
+        padding: 10px;
+        cursor: pointer;
+        font-family: 'Sen', Helvetica, sans-serif;
+        display: inline-block;
+      }
+
+      .helpSpan {
+        font-size: 16px;
+        color: black;
+        display: block;
+      }
+
+      a,
+      a:visited,
+      a:hover,
+      a:focus {
+        text-decoration: none;
+        color: rgb(68, 114, 214);
+      }
+
+      .infoSpan {
+        font-size: 16px;
+        color: black;
+        display: block;
+      }
+
+      .container {
+        width: 100%;
+        height: 40;
+        display: inline-block;
+        text-align: center;
+      }
+
+      .codeSpan {
+        margin-top: -15px;
+        font-size: 28px;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: 800;
+
+        vertical-align: middle;
+        line-height: 45px;
+      }
+
+      #code {
+        margin: 10px 0;
+        height: 45px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="top" class="container">
+      <h1>Hey {user},</h1>
+    </div>
+    <div id="mid" class="container">
+      <span class="messageSpan"
+        >Thanks for registering for an account on <a href="https://localhost:3000/">arcady.io</a>! You're
+        almost ready to use your account. Here's your activation code:</span
+      >
+    </div>
+    <div id="code" class="container">
+      <span class="codeSpan">{code}</span>
+    </div>
+    <div id="bot" class="container">
+      <span class="helpSpan"
+        >In case you need help, contact our support on <a href="https://discord.com">Discord</a></span
+      >
+      <span class="infoSpan">Sent by PiP Company, ArcadyIO 2020 ©. All rights reserved.</span>
+    </div>
+  </body>
+</html>
